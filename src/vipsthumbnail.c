@@ -159,7 +159,7 @@ parse_thumbnail_size(char *thumbnail_size, int* w, int* h, ResizeConstraint* con
         *h = atoi(&thumbnail_size[pmatch[3].rm_so]);
       }
       else {
-        *w = *h;
+        *h = *w;
       }
 
       if(pmatch[4].rm_so != -1) {
