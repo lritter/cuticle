@@ -245,6 +245,7 @@ main( int argc, char **argv )
         argv[0], argv[i] );
       fprintf( stderr, "%s", vips_error_buffer() );
       vips_error_clear();
+      exit(1);
     }
 
     g_object_unref( process );
